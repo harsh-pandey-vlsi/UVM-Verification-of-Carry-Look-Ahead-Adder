@@ -1,0 +1,31 @@
+class cla_monitor extends uvm_monitor;
+  `uvm_component_utils(cla_monitor)
+  virtual cla_if vif;
+  uvm_analysis_port #(cla_txn) ap;
+  
+  function new(string name, uvm_component parent);
+    super.new(name,parent);
+    ap=new("ap", this);
+  endfunction
+  
+  function void build_phase(uvm_phase phase);
+    if (!uvm_config_db#(virtual cla_if)::get(this, "", "vif", vif))
+      `uvm_fatal("MON", "No interface")
+  endfunction
+      
+  task run_phase(uvm_phase phase);
+    cla_txn txn;
+    forever begin
+      txn=cla_txn::type_id::create("txn");
+      #1;
+      txn.a=vif.a;
+      txn.b=vif.b;
+      txn.cin=vif.cin;
+      txn.sum=vif.sum;
+      txn.cout=vif.cout;
+      
+      ap.write(txn);
+    end
+  endtask
+endclass
+    
