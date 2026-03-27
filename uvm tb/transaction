@@ -1,0 +1,23 @@
+//TRANSACTION 
+class cla_txn extends uvm_sequence_item;
+  rand bit [3:0]a,b;
+  rand bit cin;
+  
+  bit [3:0] sum;
+  bit cout;
+  
+  //Adding Constraint of valid range
+  constraint valid_range{
+    a inside{[0:15]};
+    b inside{[0:15]};
+  }
+  constraint carry_stress{
+    (a==4'b1111)->(cin==1);
+  }
+  
+  `uvm_object_utils(cla_txn)
+  
+  function new(string name="cla_txn");
+    super.new(name);
+  endfunction
+endclass
