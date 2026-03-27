@@ -1,0 +1,24 @@
+//TEST 
+class cla_test extends uvm_test;
+  `uvm_component_utils(cla_test)
+  cla_env env;
+  
+  function new(string name, uvm_component parent);
+    super.new(name, parent);
+  endfunction
+  
+  function void build_phase(uvm_phase phase);
+    env = cla_env::type_id::create("env",this);
+  endfunction
+  
+  task run_phase(uvm_phase phase);
+    cla_sequence seq;
+    phase.raise_objection(this);
+    seq = cla_sequence::type_id::create("seq");
+    seq.start(env.agt.seqr);
+    #50;
+    $display("\n Coverage Report");
+    $display("Coverage = %0.2f %%", env.cov.cg.get_coverage());
+    phase.drop_objection(this);
+  endtask
+endclass
