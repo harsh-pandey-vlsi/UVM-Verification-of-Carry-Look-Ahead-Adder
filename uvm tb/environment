@@ -1,0 +1,22 @@
+//ENVIRONMENT
+class cla_env extends uvm_env;
+  `uvm_component_utils(cla_env)
+  cla_agent agt;
+  cla_scoreboard sb;
+  cla_coverage cov;
+  
+  function new(string name, uvm_component parent);
+    super.new(name,parent);
+  endfunction
+  
+  function void build_phase(uvm_phase phase);
+    agt= cla_agent::type_id::create("agt",this);
+    sb = cla_scoreboard::type_id::create("sb",this);
+    cov = cla_coverage::type_id::create("cov",this);
+  endfunction
+  
+  function void connect_phase(uvm_phase phase);
+    agt.mon.ap.connect(sb.imp);
+    agt.mon.ap.connect(cov.imp);
+  endfunction
+endclass
