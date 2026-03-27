@@ -1,0 +1,206 @@
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO /usr/share/questa/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO /usr/share/questa/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test cla_test...
+# UVM_INFO testbench.sv(167) @ 1000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 2000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 3000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 4000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 5000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 6000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 7000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 8000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 9000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 10000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 11000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 12000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 13000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 14000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 15000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 16000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 17000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 18000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 19000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 20000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 21000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 22000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 23000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 24000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 25000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 26000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 27000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 28000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 29000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 30000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 31000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 32000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 33000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 34000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 35000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 36000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 37000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 38000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 39000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 40000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 41000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 42000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 43000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 44000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 45000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 46000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 47000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 48000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 49000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 50000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 51000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 52000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 53000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 54000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 55000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 56000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 57000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 58000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 59000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 60000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 61000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 62000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 63000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 64000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 65000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 66000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 67000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 68000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 69000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 70000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 71000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 72000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 73000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 74000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 75000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 76000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 77000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 78000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 79000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 80000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 81000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 82000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 83000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 84000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 85000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 86000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 87000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 88000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 89000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 90000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 91000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 92000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 93000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 94000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 95000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 96000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 97000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 98000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 99000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 100000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 101000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 102000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 103000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 104000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 105000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 106000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 107000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 108000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 109000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 110000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 111000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 112000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 113000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 114000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 115000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 116000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 117000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 118000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 119000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 120000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 121000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 122000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 123000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 124000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 125000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 126000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 127000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 128000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 129000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 130000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 131000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 132000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 133000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 134000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 135000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 136000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 137000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 138000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 139000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 140000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 141000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 142000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 143000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 144000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 145000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 146000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 147000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 148000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO testbench.sv(167) @ 149000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# 
+#  Coverage Report
+# Coverage = 88.23 %
+# UVM_INFO testbench.sv(167) @ 150000: uvm_test_top.env.sb [SCOREBOARD] PASS
+# UVM_INFO /usr/share/questa/questasim/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 150000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /usr/share/questa/questasim/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 150000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  155
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]   150
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : /usr/share/questa/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 150 ns  Iteration: 68  Instance: /tb_top
+# End time: 15:27:07 on Mar 27,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+End time: 15:27:07 on Mar 27,2026, Elapsed time: 0:00:13
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   1
+    vopt: Errors:   0, Warnings:   2
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   3
+Finding VCD file...
+./wave.vcd
