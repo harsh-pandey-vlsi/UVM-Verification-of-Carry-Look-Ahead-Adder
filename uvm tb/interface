@@ -1,0 +1,12 @@
+`timescale 1ns/1ps
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+// INTERFACE
+interface cla_if;
+  logic [3:0]a,b;
+  logic cin;
+  logic [3:0]sum;
+  logic cout;
+endinterface
