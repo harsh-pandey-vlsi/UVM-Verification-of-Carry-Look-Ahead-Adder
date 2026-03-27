@@ -1,0 +1,22 @@
+//SCOREBOARD
+class cla_scoreboard extends uvm_scoreboard;
+  `uvm_component_utils(cla_scoreboard)
+  uvm_analysis_imp #(cla_txn, cla_scoreboard) imp;
+  
+  function new(string name, uvm_component parent);
+    super.new(name, parent);
+    imp = new("imp", this);
+  endfunction
+  
+  function void write(cla_txn txn);
+    bit [4:0] expected;
+    expected = txn.a + txn.b +txn.cin;
+    
+    if({txn.cout, txn.sum} !== expected)
+      `uvm_error("SCOREBOARD",
+                 $sformatf("FAIL a=%0d b=%od cin=%0d > sum=%0d cout=%0d expected=%0d",txn.a,txn.b,txn.cin,txn.sum,txn.cout,expected))
+    else
+      `uvm_info("SCOREBOARD","PASS",UVM_LOW)
+  endfunction
+endclass
+    
