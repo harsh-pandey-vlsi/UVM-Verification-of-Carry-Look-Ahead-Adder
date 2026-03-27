@@ -1,0 +1,18 @@
+//SEQUENCE
+class cla_sequence extends uvm_sequence #(cla_txn);
+  `uvm_object_utils(cla_sequence)
+  
+  function new(string name="cla_sequence");
+    super.new(name);
+  endfunction
+  
+  task body();
+    cla_txn txn;
+    repeat(100) begin
+      txn=cla_txn::type_id::create("txn");
+      assert(txn.randomize());
+      start_item(txn);
+      finish_item(txn);
+    end
+  endtask
+endclass
