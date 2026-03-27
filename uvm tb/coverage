@@ -1,0 +1,29 @@
+class cla_coverage extends uvm_component;
+  `uvm_component_utils(cla_coverage)
+  uvm_analysis_imp #(cla_txn, cla_coverage) imp;
+  
+  covergroup cg;
+    coverpoint txn.a{
+      bins low = {[0:3]};
+      bins mid = {[4:11]};
+      bins high = {[12:15]};
+    }
+    coverpoint txn.cin;
+    coverpoint txn.cout;
+    
+    cross txn.a,txn.b,txn.cin;
+  endgroup
+  
+  cla_txn txn;
+  
+  function new(string name, uvm_component parent);
+    super.new(name, parent);
+    imp=new("imp",this);
+    cg=new();
+  endfunction
+  
+  function void write(cla_txn t);
+    txn=t;
+    cg.sample();
+  endfunction
+endclass
