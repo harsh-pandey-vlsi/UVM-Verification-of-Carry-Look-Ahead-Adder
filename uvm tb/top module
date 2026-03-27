@@ -1,0 +1,20 @@
+//TOP MODULE
+module tb_top;
+  cla_if vif();
+  
+  cla_4bit dut(
+    .a(vif.a),.b(vif.b),.cin(vif.cin),.sum
+    (vif.sum),.cout(vif.cout)
+  );
+  
+  initial begin
+    uvm_config_db#(virtual cla_if)::set(null, "*", "vif", vif);
+    run_test("cla_test");
+  end
+  
+  initial begin
+    $dumpfile("wave.vcd");
+    $dumpvars(0,tb_top);
+  end
+
+endmodule
